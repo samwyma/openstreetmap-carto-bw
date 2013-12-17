@@ -1,37 +1,37 @@
 /* For the main linear features, such as roads and railways. */
 
-@motorway-fill: #89a4cb;
-@trunk-fill: #94d494;
-@trunk-fill-alternative: #97d397;
-@primary-fill: #dd9f9f;
-@secondary-fill: #f9d6aa;
-@tertiary-fill: #f8f8ba;
-@residential-fill: #ffffff;
-@service-fill: #ffffff;
-@living-street-fill: #ccc;
-@pedestrian-fill: #ededed;
-@road-fill: #ddd;
+@motorway-fill: desaturate(#89a4cb,100%);
+@trunk-fill: desaturate(#94d494,100%);
+@trunk-fill-alternative: desaturate(#97d397,100%);
+@primary-fill: desaturate(#dd9f9f,100%);
+@secondary-fill: desaturate(#f9d6aa,100%);
+@tertiary-fill: desaturate(#f8f8ba,100%);
+@residential-fill: desaturate(#ffffff,100%);
+@service-fill: desaturate(#ffffff,100%);
+@living-street-fill: desaturate(#ccc,100%);
+@pedestrian-fill: desaturate(#ededed,100%);
+@road-fill: desaturate(#ddd,100%);
 @path-fill: black;
-@footway-fill: salmon;
+@footway-fill: desaturate(salmon,100%);
 @steps-fill: @footway-fill;
-@cycleway-fill: blue;
-@bridleway-fill: green;
-@track-fill: #996600;
-@track-grade1-fill: #b37700;
-@track-grade2-fill: #a87000;
-@aeroway-fill: #bbc;
+@cycleway-fill: desaturate(blue,100%);
+@bridleway-fill: desaturate(green,100%);
+@track-fill: desaturate(#996600,100%);
+@track-grade1-fill: desaturate(#b37700,100%);
+@track-grade2-fill: desaturate(#a87000,100%);
+@aeroway-fill: desaturate(#bbc,100%);
 @runway-fill: @aeroway-fill;
 @taxiway-fill: @aeroway-fill;
 @helipad-fill: @aeroway-fill;
 
 @default-casing: white;
-@motorway-casing: #7788a1;
-@trunk-casing: #7eae7e;
-@primary-casing: #c57b7e;
-@secondary-casing: #cca16a;
-@tertiary-casing: #c6c68a;
-@residential-casing: #bbb;
-@service-casing: #999;
+@motorway-casing: desaturate(#7788a1,100%);
+@trunk-casing: desaturate(#7eae7e,100%);
+@primary-casing: desaturate(#c57b7e,100%);
+@secondary-casing: desaturate(#cca16a,100%);
+@tertiary-casing: desaturate(#c6c68a,100%);
+@residential-casing: desaturate(#bbb,100%);
+@service-casing: desaturate(#999,100%);
 @living-street-casing: @default-casing;
 @pedestrian-casing: grey;
 @path-casing: @default-casing;
@@ -41,12 +41,12 @@
 @bridleway-casing: @default-casing;
 @track-casing: @default-casing;
 
-@residential-construction: #aaa;
-@service-construction: #aaa;
+@residential-construction: desaturate(#aaa,100%);
+@service-construction: desaturate(#aaa,100%);
 
-@permissive-marking: #cf9;
-@destination-marking: #c2e0ff;
-@private-marking: #efa9a9;
+@permissive-marking: desaturate(#cf9,100%);
+@destination-marking: desaturate(#c2e0ff,100%);
+@private-marking: desaturate(#efa9a9,100%);
 
 @tunnel-casing: grey;
 @bridge-casing: black;
@@ -226,7 +226,7 @@
   [feature = 'highway_residential'],
   [feature = 'highway_unclassified'] {
     [zoom >= 14] {
-      line-color: #999;
+      line-color: desaturate(#999,100%);
       line-width: 1;
     }
   }
@@ -266,7 +266,7 @@
   [feature = 'highway_unclassified'],
   [feature = 'highway_service'] {
     [zoom >= 14] {
-      polygon-fill: #fff;
+      polygon-fill: desaturate(#fff,100%);
     }
   }
 
@@ -274,18 +274,18 @@
   [feature = 'highway_footway'],
   [feature = 'highway_path'] {
     [zoom >= 14] {
-      polygon-fill: #ededed;
+      polygon-fill: desaturate(#ededed,100%);
     }
   }
 
   [feature = 'highway_track'][zoom >= 14] {
-    polygon-fill: #dfcc66;
+    polygon-fill: desaturate(#dfcc66,100%);
   }
 
   [feature = 'highway_platform'],
   [feature = 'railway_platform'] {
     [zoom >= 16] {
-      polygon-fill: #bbbbbb;
+      polygon-fill: desaturate(#bbbbbb,100%);
       polygon-gamma: 0.65;
     }
   }
@@ -307,7 +307,7 @@
   [zoom >= 11] {
     ref/text-name: "[ref]";
     ref/text-size: 9;
-    ref/text-fill: #6666ff;
+    ref/text-fill: desaturate(#6666ff,100%);
     ref/text-min-distance: 2;
     ref/text-face-name: @oblique-fonts;
     ref/text-halo-radius: 1;
@@ -315,7 +315,7 @@
     [zoom >= 12] {
       name/text-name: "[name]";
       name/text-size: 8;
-      name/text-fill: #6666ff;
+      name/text-fill: desaturate(#6666ff,100%);
       name/text-dy: -8;
       name/text-face-name: @oblique-fonts;
       name/text-halo-radius: 1;
@@ -609,7 +609,7 @@
 #roads-casing::links {
   [highway = 'raceway'] {
     [zoom >= 12] {
-      line-color: pink;
+      line-color: desaturate(pink,100%);
       line-width: 1.2;
       line-cap: round;
       line-join: round;
@@ -890,7 +890,7 @@
   [feature = 'highway_construction'] {
     [zoom >= 12] {
       line-width: 2;
-      line-color: #9cc;
+      line-color: desaturate(#9cc,100%);
 
       [construction = 'motorway'],
       [construction = 'motorway_link'] {
@@ -954,7 +954,7 @@
         line-width: 3;
         line-opacity: 0.4;
         b/line-width: 1.2;
-        b/line-color: #69f;
+        b/line-color: desaturate(#69f,100%);
         b/line-dasharray: 2,6;
       }
     }
@@ -1102,7 +1102,7 @@
       line-color: grey;
       line-cap: round;
       b/line-width: 4;
-      b/line-color: #bbbbbb;
+      b/line-color: desaturate(#bbbbbb,100%);
       b/line-cap: round;
       b/line-join: round;
     }
@@ -1252,13 +1252,13 @@
       e/line-width: 3;
       f/line-width: 3;
       g/line-width: 3;
-      a/line-color: #ffffff;
-      b/line-color: #fdfdfd;
-      c/line-color: #ececec;
-      d/line-color: #cacaca;
-      e/line-color: #afafaf;
-      f/line-color: #a1a1a1;
-      g/line-color: #9b9b9b;
+      a/line-color: desaturate(#ffffff,100%);
+      b/line-color: desaturate(#fdfdfd,100%);
+      c/line-color: desaturate(#ececec,100%);
+      d/line-color: desaturate(#cacaca,100%);
+      e/line-color: desaturate(#afafaf,100%);
+      f/line-color: desaturate(#a1a1a1,100%);
+      g/line-color: desaturate(#9b9b9b,100%);
       a/line-dasharray: 1,9;
       b/line-dasharray: 0,1,1,8;
       c/line-dasharray: 0,2,1,7;
@@ -1286,7 +1286,7 @@
 
     [feature = 'railway_rail'][tunnel != 'yes'][zoom >= 13] {
       a/line-width: 3;
-      a/line-color: #999999;
+      a/line-color: desaturate(#999999,100%);
       a/line-join: round;
       b/line-width: 1;
       b/line-color: white;
@@ -1299,10 +1299,10 @@
 
     [feature = 'railway_spur-siding-yard'][zoom >= 11] {
       a/line-width: 1;
-      a/line-color: #aaa;
+      a/line-color: desaturate(#aaa,100%);
       a/line-join: round;
       [zoom >= 13][tunnel != 'yes'] {
-        a/line-color: #999999;
+        a/line-color: desaturate(#999999,100%);
         a/line-width: 2;
         b/line-width: 0.8;
         b/line-dasharray: 0,8,11,1;
@@ -1315,13 +1315,13 @@
     [feature = 'railway_funicular'] {
       [zoom >= 13] {
         a/line-width: 2;
-        a/line-color: #666;
+        a/line-color: desaturate(#666,100%);
         [tunnel = 'yes'] {
           a/line-width: 5;
           a/line-dasharray: 5,3;
-          b/line-color: #fff;
+          b/line-color: desaturate(#fff,100%);
           b/line-width: 4;
-          c/line-color: #aaa;
+          c/line-color: desaturate(#aaa,100%);
           c/line-width: 1.5;
         }
       }
@@ -1329,22 +1329,22 @@
 
     [feature = 'railway_miniature'][zoom >= 15] {
       a/line-width: 1.2;
-      a/line-color: #999;
+      a/line-color: desaturate(#999,100%);
       b/line-width: 3;
-      b/line-color: #999;
+      b/line-color: desaturate(#999,100%);
       b/line-dasharray: 1,10;
     }
 
     [feature = 'railway_tram'][tunnel = 'yes'][zoom >= 13] {
       line-width: 1;
       line-dasharray: 5,3;
-      line-color: #444;
+      line-color: desaturate(#444,100%);
       [zoom >= 15] { line-width: 2; }
     }
 
     [feature = 'railway_light_rail'][zoom >= 13] {
       line-width: 2;
-      line-color: #666;
+      line-color: desaturate(#666,100%);
       [tunnel = 'yes'] {
         line-dasharray: 5,3;
       }
@@ -1352,7 +1352,7 @@
 
     [feature = 'railway_subway'][zoom >= 12] {
       line-width: 2;
-      line-color: #999;
+      line-color: desaturate(#999,100%);
       [tunnel = 'yes'] {
         line-dasharray: 5,3;
       }
@@ -1361,11 +1361,11 @@
 
     [feature = 'railway_preserved'][zoom >= 12] {
       line-width: 1.5;
-      line-color: #aaa;
+      line-color: desaturate(#aaa,100%);
       line-join: round;
       [zoom >= 13] {
         line-width: 3;
-        line-color: #999999;
+        line-color: desaturate(#999999,100%);
         b/line-width: 1;
         b/line-color: white;
         b/line-dasharray: 0,1,8,1;
@@ -1375,11 +1375,11 @@
 
     [feature = 'railway_INT-preserved-ssy'][zoom >= 12] {
       line-width: 1;
-      line-color: #aaa;
+      line-color: desaturate(#aaa,100%);
       line-join: round;
       [zoom >= 13] {
         line-width: 2;
-        line-color: #999999;
+        line-color: desaturate(#999999,100%);
         b/line-width: 0.8;
         b/line-color: white;
         b/line-dasharray: 0,1,8,1;
@@ -1389,12 +1389,12 @@
 
     [feature = 'railway_monorail'][zoom >= 14] {
       line-width: 4;
-      line-color: #fff;
+      line-color: desaturate(#fff,100%);
       line-opacity: 0.4;
       line-cap: round;
       line-join: round;
       b/line-width: 3;
-      b/line-color: #777;
+      b/line-color: desaturate(#777,100%);
       b/line-dasharray: 2,3;
       b/line-cap: round;
       b/line-join: round;
@@ -1418,7 +1418,7 @@
         line-color: grey;
         line-cap: round;
         b/line-width: 4;
-        b/line-color: #bbbbbb;
+        b/line-color: desaturate(#bbbbbb,100%);
         b/line-cap: round;
         b/line-join: round;
       }
@@ -1426,7 +1426,7 @@
 
     [feature = 'railway_turntable'][zoom >= 16] {
       line-width: 1.5;
-      line-color: #999;
+      line-color: desaturate(#999,100%);
     }
 
   [feature = 'aeroway_runway'][zoom >= 11][zoom < 14] {
@@ -1920,7 +1920,7 @@
 
       [feature = 'railway_rail'][zoom >= 13] {
         line-width: 3;
-        line-color: #999999;
+        line-color: desaturate(#999999,100%);
         line-join: round;
         b/line-width: 1;
         b/line-color: white;
@@ -1933,7 +1933,7 @@
 
       [feature = 'railway_INT-spur-siding-yard'][zoom >= 13] {
         line-width: 2;
-        line-color: #999999;
+        line-color: desaturate(#999999,100%);
         line-join: round;
         b/line-width: 0.8;
         b/line-color: white;
@@ -1954,14 +1954,14 @@
 
       [feature = 'railway_subway'][zoom >= 14] {
         line-width: 2;
-        line-color: #999;
+        line-color: desaturate(#999,100%);
       }
 
       [feature = 'railway_light_rail'],
       [feature = 'railway_narrow_gauge'] {
         [zoom >= 14] {
           line-width: 2;
-          line-color: #666;
+          line-color: desaturate(#666,100%);
         }
       }
 
@@ -2100,7 +2100,7 @@
 
     [feature = 'railway_rail'][zoom >= 6][zoom < 13] {
       line-width: 0.6;
-      line-color: #aaa;
+      line-color: desaturate(#aaa,100%);
       [zoom >= 9] { line-width: 1; }
       [zoom >= 10] { line-width: 2; }
       [tunnel = 'yes'] {
@@ -2114,15 +2114,15 @@
     [feature = 'railway_narrow_gauge'] {
       [zoom >= 8][zoom < 13] {
         line-width: 1;
-        line-color: #ccc;
-        [zoom >= 10] { line-color: #aaa }
+        line-color: desaturate(#ccc,100%);
+        [zoom >= 10] { line-color: desaturate(#aaa,100%); }
       }
     }
 }
 
 #trams {
   [railway = 'tram'][zoom >= 13] {
-    line-color: #444;
+    line-color: desaturate(#444,100%);
     line-width: 1;
     [zoom >= 15] {
       line-width: 2;
@@ -2132,7 +2132,7 @@
         b/line-width: 4;
         b/line-color: white;
         c/line-width: 2;
-        c/line-color: #444;
+        c/line-color: desaturate(#444,100%);
       }
     }
   }
@@ -2141,7 +2141,7 @@
 #guideways {
   [zoom >= 13] {
     line-width: 3;
-    line-color: #6666ff;
+    line-color: desaturate(#6666ff,100%);
     line-join: round;
     b/line-width: 1;
     b/line-color: white;
@@ -2158,23 +2158,23 @@
     [zoom >= 10][zoom < 13] {
       shield-name: "[ref]";
       shield-size: 10;
-      shield-fill: #fff;
+      shield-fill: desaturate(#fff,100%);
       shield-placement: line;
-      shield-file: url("symbols/mot_shield[length].png");
+      shield-file: url("symbolsblackwhite/mot_shield[length].png");
       shield-spacing: 750;
       shield-min-distance: 30;
       shield-face-name: @bold-fonts;
-      [length = 7] { shield-file: url('symbols/mot_shield6.png'); }
-      [length = 8] { shield-file: url('symbols/mot_shield7.png'); }
+      [length = 7] { shield-file: url('symbolsblackwhite/mot_shield6.png'); }
+      [length = 8] { shield-file: url('symbolsblackwhite/mot_shield7.png'); }
     }
   }
 
   [highway = 'trunk'][zoom >= 11][zoom < 13] {
     shield-name: "[ref]";
     shield-size: 10;
-    shield-fill: #fff;
+    shield-fill: desaturate(#fff,100%);
     shield-placement: line;
-    shield-file: url("symbols/tru_shield[length].png");
+    shield-file: url("symbolsblackwhite/tru_shield[length].png");
     shield-spacing: 750;
     shield-min-distance: 30;
     shield-face-name: @bold-fonts;
@@ -2183,9 +2183,9 @@
   [highway = 'primary'][zoom >= 11][zoom < 13] {
     shield-name: "[ref]";
     shield-size: 10;
-    shield-fill: #fff;
+    shield-fill: desaturate(#fff,100%);
     shield-placement: line;
-    shield-file: url("symbols/pri_shield[length].png");
+    shield-file: url("symbolsblackwhite/pri_shield[length].png");
     shield-spacing: 750;
     shield-min-distance: 30;
     shield-face-name: @bold-fonts;
@@ -2194,9 +2194,9 @@
   [highway = 'secondary'][zoom >= 12][zoom < 13] {
     shield-name: "[ref]";
     shield-size: 10;
-    shield-fill: #fff;
+    shield-fill: desaturate(#fff,100%);
     shield-placement: line;
-    shield-file: url("symbols/sec_shield[length].png");
+    shield-file: url("symbolsblackwhite/sec_shield[length].png");
     shield-spacing: 750;
     shield-min-distance: 30;
     shield-face-name: @bold-fonts;
@@ -2208,24 +2208,24 @@
     [zoom >= 13] {
       shield-name: "[ref]";
       shield-size: 10;
-      shield-fill: #fff;
+      shield-fill: desaturate(#fff,100%);
       shield-placement: line;
-      shield-file: url("symbols/mot_shield[length].png");
+      shield-file: url("symbolsblackwhite/mot_shield[length].png");
       shield-spacing: 750;
       shield-min-distance: 30;
       shield-face-name: @bold-fonts;
       shield-avoid-edges: true;
-      [length = 7] { shield-file: url('symbols/mot_shield6.png'); }
-      [length = 8] { shield-file: url('symbols/mot_shield7.png'); }
+      [length = 7] { shield-file: url('symbolsblackwhite/mot_shield6.png'); }
+      [length = 8] { shield-file: url('symbolsblackwhite/mot_shield7.png'); }
     }
   }
 
   [highway = 'trunk'][zoom >= 13] {
     shield-name: "[ref]";
     shield-size: 10;
-    shield-fill: #fff;
+    shield-fill: desaturate(#fff,100%);
     shield-placement: line;
-    shield-file: url("symbols/tru_shield[length].png");
+    shield-file: url("symbolsblackwhite/tru_shield[length].png");
     shield-spacing: 750;
     shield-min-distance: 30;
     shield-face-name: @bold-fonts;
@@ -2235,9 +2235,9 @@
   [highway = 'primary'][zoom >= 13] {
     shield-name: "[ref]";
     shield-size: 10;
-    shield-fill: #fff;
+    shield-fill: desaturate(#fff,100%);
     shield-placement: line;
-    shield-file: url("symbols/pri_shield[length].png");
+    shield-file: url("symbolsblackwhite/pri_shield[length].png");
     shield-spacing: 750;
     shield-min-distance: 30;
     shield-face-name: @bold-fonts;
@@ -2247,9 +2247,9 @@
   [highway = 'secondary'][bridge = 'no'][zoom >= 13] {
     shield-name: "[ref]";
     shield-size: 10;
-    shield-fill: #fff;
+    shield-fill: desaturate(#fff,100%);
     shield-placement: line;
-    shield-file: url("symbols/sec_shield[length].png");
+    shield-file: url("symbolsblackwhite/sec_shield[length].png");
     shield-spacing: 750;
     shield-min-distance: 30;
     shield-face-name: @bold-fonts;
@@ -2259,9 +2259,9 @@
   [highway = 'tertiary'][bridge = 'no'][zoom >= 13] {
     shield-name: "[ref]";
     shield-size: 10;
-    shield-fill: #fff;
+    shield-fill: desaturate(#fff,100%);
     shield-placement: line;
-    shield-file: url("symbols/ter_shield[length].png");
+    shield-file: url("symbolsblackwhite/ter_shield[length].png");
     shield-spacing: 750;
     shield-min-distance: 30;
     shield-face-name: @bold-fonts;
@@ -2273,7 +2273,7 @@
     [zoom >= 15][bridge = 'no'] {
       text-name: "[ref]";
       text-size: 10;
-      text-fill: #000;
+      text-fill: desaturate(#000,100%);
       text-face-name: @bold-fonts;
       text-min-distance: 18;
       text-halo-radius: 1;
@@ -2287,7 +2287,7 @@
     [zoom >= 15][bridge = 'no'] {
       text-name: "[ref]";
       text-size: 10;
-      text-fill: #333;
+      text-fill: desaturate(#333,100%);
       text-spacing: 750;
       text-clip: false;
       text-placement: line;
@@ -2340,7 +2340,7 @@
     [zoom >= 15] {
       text-name: "[name]";
       text-size: 9;
-      text-fill: #000;
+      text-fill: desaturate(#000,100%);
       text-spacing: 300;
       text-clip: false;
       text-placement: line;
@@ -2356,7 +2356,7 @@
     [zoom >= 13] {
       text-name: "[name]";
       text-size: 9;
-      text-fill: #000;
+      text-fill: desaturate(#000,100%);
       text-spacing: 300;
       text-clip: false;
       text-placement: line;
@@ -2390,7 +2390,7 @@
   [zoom >= 15] {
     text-name: "[name]";
     text-size: 9;
-    text-fill: #000;
+    text-fill: desaturate(#000,100%);
     text-clip: false;
     text-placement: line;
     text-face-name: @book-fonts;
@@ -2406,44 +2406,44 @@
     [oneway = 'yes'] {
       a/line-width: 1;
       a/line-dasharray: 0,12,10,152;
-      a/line-color: #6c70d5;
+      a/line-color: desaturate(#6c70d5,100%);
       a/line-join: bevel;
       a/line-clip: false;
       b/line-width: 2;
       b/line-dasharray: 0,12,9,153;
-      b/line-color: #6c70d5;
+      b/line-color: desaturate(#6c70d5,100%);
       b/line-join: bevel;
       b/line-clip: false;
       c/line-width: 3;
       c/line-dasharray: 0,18,2,154;
-      c/line-color: #6c70d5;
+      c/line-color: desaturate(#6c70d5,100%);
       c/line-join: bevel;
       c/line-clip: false;
       d/line-width: 4;
       d/line-dasharray: 0,18,1,155;
-      d/line-color: #6c70d5;
+      d/line-color: desaturate(#6c70d5,100%);
       d/line-join: bevel;
       d/line-clip: false;
     }
     [oneway = '-1'] {
       a/line-width: 1;
       a/line-dasharray: 0,12,10,152;
-      a/line-color: #6c70d5;
+      a/line-color: desaturate(#6c70d5,100%);
       a/line-join: bevel;
       a/line-clip: false;
       b/line-width: 2;
       b/line-dasharray: 0,13,9,152;
-      b/line-color: #6c70d5;
+      b/line-color: desaturate(#6c70d5,100%);
       b/line-join: bevel;
       b/line-clip: false;
       c/line-width: 3;
       c/line-dasharray: 0,14,2,158;
-      c/line-color: #6c70d5;
+      c/line-color: desaturate(#6c70d5,100%);
       c/line-join: bevel;
       c/line-clip: false;
       d/line-width: 4;
       d/line-dasharray: 0,15,1,158;
-      d/line-color: #6c70d5;
+      d/line-color: desaturate(#6c70d5,100%);
       d/line-join: bevel;
       d/line-clip: false;
     }

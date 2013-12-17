@@ -6,5 +6,5 @@ Map {
 @bold-fonts: "DejaVu Sans Bold", "unifont Medium";
 @oblique-fonts: "DejaVu Sans Oblique", "unifont Medium";
 
-@water-color: #b5d0d0;
-@land-color: #f2efe9;
+@water-color: desaturate(#b5d0d0,100%);
+@land-color: desaturate(#f2efe9,100%);

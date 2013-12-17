@@ -14,11 +14,11 @@
 
 .castlewalls {
   [zoom >= 14] {
-    line-color: #999;
+    line-color: desaturate(#999,100%);
     line-width: 1;
   }
   [zoom >= 16] {
-    line-color: #888;
+    line-color: desaturate(#888,100%);
     line-width: 2;
   }
 }

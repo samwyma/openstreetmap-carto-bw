@@ -3,10 +3,10 @@
     [zoom >= 6] {
       line-dasharray: 4,2;
       line-width: 1.5;
-      line-color: #9cf;
-      polygon-pattern-file: url('symbols/glacier.png');
+      line-color: desaturate(#9cf,100%);
+      polygon-pattern-file: url('symbolsblackwhite/glacier.png');
       [zoom >= 8] {
-        polygon-pattern-file: url('symbols/glacier2.png');
+        polygon-pattern-file: url('symbolsblackwhite/glacier2.png');
       }
     }
   }
@@ -37,7 +37,7 @@
   }
 
   [natural = 'mud'][zoom >= 13]::natural {
-    polygon-pattern-file: url('symbols/mud.png');
+    polygon-pattern-file: url('symbolsblackwhite/mud.png');
   }
 }
 
@@ -45,7 +45,7 @@
   [natural = 'marsh'],
   [natural = 'wetland'] {
     [zoom >= 13] {
-      polygon-pattern-file: url('symbols/marsh.png');
+      polygon-pattern-file: url('symbolsblackwhite/marsh.png');
     }
   }
 }
@@ -56,7 +56,7 @@
   [way_area < 5000000][zoom >= 12] {
     text-name: "[name]";
     text-size: 9;
-    text-fill: #99f;
+    text-fill: desaturate(#99f,100%);
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-wrap-width: 20;
@@ -88,7 +88,7 @@
 
 #water-lines {
   [waterway = 'weir'][zoom >= 15] {
-    line-color: #aaa;
+    line-color: desaturate(#aaa,100%);
     line-width: 2;
     line-join: round;
     line-cap: round;
@@ -171,7 +171,7 @@
       line-dasharray: 4,2;
       line-width: 2.4;
       a/line-width: 1.2;
-      a/line-color: #f3f7f7;
+      a/line-color: desaturate(#f3f7f7,100%);
     }
   }
 
@@ -184,7 +184,7 @@
         line-width: 2;
         line-dasharray: 4,2;
         a/line-width: 1;
-        a/line-color: #f3f7f7;
+        a/line-color: desaturate(#f3f7f7,100%);
       }
     }
   }
@@ -207,7 +207,7 @@
   [waterway = 'canal'][disused = 'yes'] {
     [zoom >= 12] {
       line-width: 1.5;
-      line-color: #b5e4d0;
+      line-color: desaturate(#b5e4d0,100%);
       line-dasharray: 4,4;
       line-opacity: 0.5;
       line-join: round;
@@ -227,7 +227,7 @@
 #waterway-bridges {
   [zoom >= 14] {
     line-width: 7;
-    line-color: #000;
+    line-color: desaturate(#000,100%);
     line-join: round;
     b/line-width: 6;
     b/line-color: @water-color;
@@ -245,7 +245,7 @@
     text-name: "[name]";
     text-face-name: @book-fonts;
     text-placement: line;
-    text-fill: #6699cc;
+    text-fill: desaturate(#6699cc,100%);
     text-spacing: 400;
     text-size: 9;
     text-halo-radius: 1;
@@ -259,14 +259,14 @@
     text-halo-radius: 1;
     text-size: 8;
     text-placement: line;
-    text-fill: #6699cc;
+    text-fill: desaturate(#6699cc,100%);
   }
 
   [waterway = 'stream'][zoom >= 15] {
     text-name: "[name]";
     text-size: 8;
     text-face-name: @book-fonts;
-    text-fill: #6699cc;
+    text-fill: desaturate(#6699cc,100%);
     text-halo-radius: 1;
     text-spacing: 600;
     text-placement: line;
@@ -278,7 +278,7 @@
       text-name: "[name]";
       text-face-name: @book-fonts;
       text-size: 8;
-      text-fill: #6699cc;
+      text-fill: desaturate(#6699cc,100%);
       text-spacing: 600;
       text-placement: line;
       text-halo-radius: 1;
@@ -288,7 +288,7 @@
   [waterway = 'canal'][zoom >= 14] {
     text-name: "[name]";
     text-size: 9;
-    text-fill: #6699cc;
+    text-fill: desaturate(#6699cc,100%);
     text-placement: line;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
@@ -303,7 +303,7 @@
     [zoom >= 13] {
       text-name: "[name]";
       text-size: 9;
-      text-fill: #80d1ae;
+      text-fill: desaturate(#80d1ae,100%);
       text-face-name: @book-fonts;
       text-placement: line;
       text-spacing: 600;

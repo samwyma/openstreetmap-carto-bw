@@ -1,6 +1,6 @@
 #interpolation {
   [zoom >= 17] {
-    line-color: #888;
+    line-color: desaturate(#888,100%);
     line-width: 1;
     line-dasharray: 2,4;
   }
@@ -13,7 +13,7 @@
     text-min-distance: 1;
     text-wrap-width: 0;
     text-face-name: @book-fonts;
-    text-fill: #444;
+    text-fill: desaturate(#444,100%);
     text-size: 9;
   }
 }
@@ -25,7 +25,7 @@
     text-wrap-width: 20;
     text-face-name: @book-fonts;
     text-size: 8;
-    text-fill: #444;
+    text-fill: desaturate(#444,100%);
     [zoom >= 18] {
       text-size: 9;
     }
