@@ -39,82 +39,6 @@
       "geometry": "polygon",
       "extent": [
         -179.99999692067183,
-        -85.051,
-        179.99999692067183,
-        83.66933299999998
-      ],
-      "id": "world",
-      "class": "",
-      "Datasource": {
-        "file": "data/simplified-land-polygons-complete-3857/simplified_land_polygons.shp",
-        "type": "shape"
-      },
-      "srs-name": "900913",
-      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "advanced": {},
-      "name": "world"
-    },
-    {
-      "geometry": "polygon",
-      "extent": [
-        -179.99999692067183,
-        -85.051,
-        179.99999692067183,
-        83.66933299999998
-      ],
-      "id": "coast-poly",
-      "class": "",
-      "Datasource": {
-        "file": "data/land-polygons-split-3857/land_polygons.shp",
-        "type": "shape"
-      },
-      "srs-name": "900913",
-      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "advanced": {},
-      "name": "coast-poly"
-    },
-    {
-      "geometry": "polygon",
-      "extent": [
-        -179.12960815429688,
-        -52.982724914179855,
-        178.4432525634766,
-        70.87402746981634
-      ],
-      "id": "builtup",
-      "class": "",
-      "Datasource": {
-        "file": "data/world_boundaries/builtup_area.shp",
-        "type": "shape"
-      },
-      "srs-name": "mercator",
-      "srs": "+proj=merc +datum=WGS84 +over",
-      "advanced": {},
-      "name": "builtup"
-    },
-    {
-      "geometry": "linestring",
-      "extent": [
-        -140.99778,
-        -54.89681,
-        141.03385176001382,
-        70.16419
-      ],
-      "id": "necountries",
-      "class": "",
-      "Datasource": {
-        "file": "data/ne_110m_admin_0_boundary_lines_land/ne_110m_admin_0_boundary_lines_land.shp",
-        "type": "shape"
-      },
-      "srs-name": "WGS84",
-      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
-      "advanced": {},
-      "name": "necountries"
-    },
-    {
-      "geometry": "polygon",
-      "extent": [
-        -179.99999692067183,
         -84.96651228427099,
         179.99999692067183,
         84.96651228427098
@@ -125,7 +49,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "landcover",
       "class": "",
@@ -148,7 +77,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "landcover-line",
       "class": "",
@@ -171,7 +105,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "sports-grounds",
       "class": "",
@@ -194,7 +133,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "water-lines-casing",
       "class": "",
@@ -217,7 +161,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "water-lines-low-zoom",
       "class": "",
@@ -240,7 +189,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "water-areas",
       "class": "",
@@ -263,7 +217,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "water-areas-overlay",
       "class": "",
@@ -286,7 +245,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "glaciers-text",
       "class": "",
@@ -305,11 +269,16 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "      (select way,waterway,disused,lock,name,\n      case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel\n      from planet_osm_line\n      where waterway in ('weir','river','canal','derelict_canal','stream','drain','ditch','wadi')\n        and (bridge is null or bridge not in ('yes','true','1','aqueduct'))\n      order by z_order\n      ) as water_lines",
+        "table": "      (select way,waterway,lock,name,\n      case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel\n      from planet_osm_line\n      where waterway in ('weir','river','canal','derelict_canal','stream','drain','ditch','wadi')\n        and (bridge is null or bridge not in ('yes','true','1','aqueduct'))\n      order by z_order\n      ) as water_lines",
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "water-lines",
       "class": "",
@@ -332,7 +301,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "dam",
       "class": "",
@@ -355,7 +329,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "marinas-area",
       "class": "",
@@ -378,7 +357,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "piers-area",
       "class": "",
@@ -401,7 +385,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "piers",
       "class": "",
@@ -424,7 +413,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "locks",
       "class": "",
@@ -447,7 +441,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "tunnels",
       "class": "",
@@ -470,7 +469,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "citywalls",
       "class": "",
@@ -493,7 +497,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "castlewalls",
       "class": "castlewalls",
@@ -516,7 +525,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "castlewalls-poly",
       "class": "castlewalls",
@@ -539,7 +553,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "landuse-overlay",
       "class": "",
@@ -562,7 +581,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "line-barriers",
       "class": "barriers",
@@ -585,7 +609,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "cliffs",
       "class": "",
@@ -608,7 +637,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "area-barriers",
       "class": "barriers",
@@ -631,7 +665,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "ferry-routes",
       "class": "",
@@ -654,7 +693,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "turning-circle-casing",
       "class": "",
@@ -677,7 +721,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "highway-area-casing",
       "class": "",
@@ -700,7 +749,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "roads-casing",
       "class": "",
@@ -723,7 +777,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "highway-area-fill",
       "class": "",
@@ -746,7 +805,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "buildings-lz",
       "class": "",
@@ -769,7 +833,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "buildings",
       "class": "",
@@ -792,7 +861,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "roads-fill",
       "class": "access",
@@ -815,7 +889,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "turning-circle-fill",
       "class": "",
@@ -838,7 +917,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "direction-pre-bridges",
       "class": "directions",
@@ -861,7 +945,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "aerialways",
       "class": "",
@@ -884,7 +973,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "roads-low-zoom",
       "class": "",
@@ -907,7 +1001,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "waterway-bridges",
       "class": "",
@@ -930,7 +1029,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "bridges",
       "class": "bridges access directions",
@@ -956,7 +1060,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "trams",
       "class": "",
@@ -979,7 +1088,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "guideways",
       "class": "",
@@ -1002,7 +1116,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "admin-01234",
       "class": "",
@@ -1025,7 +1144,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "admin-5678",
       "class": "",
@@ -1048,7 +1172,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "admin-other",
       "class": "",
@@ -1071,7 +1200,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "power-minorline",
       "class": "",
@@ -1094,7 +1228,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "power-line",
       "class": "",
@@ -1102,28 +1241,6 @@
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "advanced": {},
       "name": "power-line"
-    },
-    {
-      "geometry": "point",
-      "extent": [
-        -179.58997888396897,
-        -85.051,
-        179.38330358817018,
-        82.48332318035943
-      ],
-      "id": "nepopulated",
-      "class": "",
-      "Datasource": {
-        "file": "data/ne_10m_populated_places/ne_10m_populated_places_fixed.shp",
-        "type": "shape",
-        "encoding": "windows-1252"
-      },
-      "srs-name": "WGS84",
-      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
-      "advanced": {
-        "encoding": "windows-1252"
-      },
-      "name": "nepopulated"
     },
     {
       "geometry": "point",
@@ -1139,7 +1256,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "placenames-large",
       "class": "country state",
@@ -1158,11 +1280,16 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select way,place,name,ref\n       from planet_osm_point\n       where place in ('city','town') and capital='yes'\n      ) as placenames",
+        "table": "(select way,place,name,ref\n       from planet_osm_point\n       where place in ('city','town') and (tags @> 'capital=>yes')\n      ) as placenames",
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "placenames-capital",
       "class": "",
@@ -1181,11 +1308,16 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select way,place,name\n      from planet_osm_point\n      where place in ('city','town')\n        and (capital is null or capital != 'yes')\n      ) as placenames",
+        "table": "(select way,place,name\n      from planet_osm_point\n      where place in ('city','town')\n        and NOT (tags @> 'capital=>yes')\n      ) as placenames",
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "placenames-medium",
       "class": "",
@@ -1208,7 +1340,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "placenames-small",
       "class": "",
@@ -1227,11 +1364,16 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "      (select way,name,railway,aerialway,disused\n      from planet_osm_point\n      where railway in ('station','halt','tram_stop','subway_entrance')\n         or aerialway='station'\n      ) as stations",
+        "table": "      (select way,name,railway,aerialway\n      from planet_osm_point\n      where railway in ('station','halt','tram_stop','subway_entrance')\n         or aerialway='station'\n      ) as stations",
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "stations",
       "class": "stations",
@@ -1250,11 +1392,16 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "      (select way,name,railway,aerialway,disused\n      from planet_osm_polygon\n      where railway in ('station','halt','tram_stop')\n         or aerialway='station'\n      ) as stations",
+        "table": "      (select way,name,railway,aerialway\n      from planet_osm_polygon\n      where railway in ('station','halt','tram_stop')\n         or aerialway='station'\n      ) as stations",
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "stations-poly",
       "class": "stations",
@@ -1273,11 +1420,16 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select *\n      from planet_osm_point\n      where aeroway in ('airport','aerodrome','helipad')\n         or barrier in ('bollard','gate','lift_gate','block')\n         or highway in ('mini_roundabout','gate')\n         or man_made in ('lighthouse','power_wind','windmill','mast')\n         or (power='generator' and (\"generator:source\"='wind' or power_source='wind'))\n         or \"natural\" in ('peak','volcano','spring','tree','cave_entrance')\n         or railway='level_crossing'\n      ) as symbols",
+        "table": "(select *\n      from planet_osm_point\n      where aeroway in ('airport','aerodrome','helipad')\n         or barrier in ('bollard','gate','lift_gate','block')\n         or highway in ('mini_roundabout','gate')\n         or man_made in ('lighthouse','power_wind','windmill','mast')\n         or \"natural\" in ('peak','volcano','spring','tree','cave_entrance')\n         or railway='level_crossing'\n      ) as symbols",
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "amenity-symbols",
       "class": "symbols",
@@ -1296,11 +1448,16 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select *\n      from planet_osm_polygon\n      where aeroway in ('airport','aerodrome','helipad')\n         or barrier in ('bollard','gate','lift_gate','block')\n         or highway in ('mini_roundabout','gate')\n         or man_made in ('lighthouse','power_wind','windmill','mast')\n         or (power='generator' and (\"generator:source\"='wind' or power_source='wind'))\n         or \"natural\" in ('peak','volcano','spring','tree')\n         or railway='level_crossing'\n      ) as symbols",
+        "table": "(select *\n      from planet_osm_polygon\n      where aeroway in ('airport','aerodrome','helipad')\n         or barrier in ('bollard','gate','lift_gate','block')\n         or highway in ('mini_roundabout','gate')\n         or man_made in ('lighthouse','power_wind','windmill','mast')\n         or \"natural\" in ('peak','volcano','spring','tree')\n         or railway='level_crossing'\n      ) as symbols",
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "amenity-symbols-poly",
       "class": "symbols",
@@ -1323,7 +1480,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "amenity-points",
       "class": "points",
@@ -1346,7 +1508,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "amenity-points-poly",
       "class": "points",
@@ -1369,7 +1536,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "power-towers",
       "class": "",
@@ -1392,7 +1564,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "power-poles",
       "class": "",
@@ -1415,7 +1592,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "roads-text-ref-low-zoom",
       "class": "",
@@ -1438,7 +1620,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "highway-junctions",
       "class": "",
@@ -1461,7 +1648,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "roads-text-ref",
       "class": "",
@@ -1484,7 +1676,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "roads-text-name",
       "class": "",
@@ -1503,11 +1700,16 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "      (select way,amenity,shop,access,leisure,landuse,man_made,\"natural\",place,tourism,ele,name,ref,military,aeroway,waterway,historic,'yes'::text as point\n       from planet_osm_point\n       where amenity is not null\n          or shop in ('supermarket','bakery','clothes','fashion','convenience','doityourself','hairdresser','department_store','butcher','car','car_repair','bicycle','florist')\n          or leisure is not null\n          or landuse is not null\n          or tourism is not null\n          or \"natural\" is not null\n          or man_made in ('lighthouse','windmill')\n          or place='island'\n          or military='danger_area'\n          or aeroway='gate'\n          or waterway='lock'\n          or historic in ('memorial','archaeological_site')\n      ) as text",
+        "table": "      (select way,amenity,shop,access,leisure,landuse,man_made,\"natural\",place,tourism,tags->'ele' as ele,name,ref,military,aeroway,waterway,historic,'yes'::text as point\n       from planet_osm_point\n       where amenity is not null\n          or shop in ('supermarket','bakery','clothes','fashion','convenience','doityourself','hairdresser','department_store','butcher','car','car_repair','bicycle','florist')\n          or leisure is not null\n          or landuse is not null\n          or tourism is not null\n          or \"natural\" is not null\n          or man_made in ('lighthouse','windmill')\n          or place='island'\n          or military='danger_area'\n          or aeroway='gate'\n          or waterway='lock'\n          or historic in ('memorial','archaeological_site')\n      ) as text",
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "text",
       "class": "text",
@@ -1530,7 +1732,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "text-poly",
       "class": "text",
@@ -1553,7 +1760,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "area-text",
       "class": "",
@@ -1576,7 +1788,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "interpolation",
       "class": "",
@@ -1599,7 +1816,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "housenumbers",
       "class": "",
@@ -1622,7 +1844,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "housenames",
       "class": "",
@@ -1641,11 +1868,16 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "      (select way,waterway,disused,lock,name,\n      case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel\n      from planet_osm_line\n      where waterway in ('weir','river','canal','derelict_canal','stream','drain','ditch','wadi')\n       order by z_order\n      ) as water_lines",
+        "table": "      (select way,waterway,lock,name,\n      case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel\n      from planet_osm_line\n      where waterway in ('weir','river','canal','derelict_canal','stream','drain','ditch','wadi')\n       order by z_order\n      ) as water_lines",
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "water-lines-text",
       "class": "",
@@ -1668,7 +1900,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "national-park-boundaries",
       "class": "",
@@ -1691,7 +1928,12 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "dbname": "gis"
+        "dbname": "{DB_NAME}",
+        "host": "{DB_HOST}",
+        "port": "{DB_PORT}",
+        "user": "{DB_USER}",
+        "password": "{DB_PASSWORD}",
+        "connect_timeout": 60
       },
       "id": "theme-park",
       "class": "",

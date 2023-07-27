@@ -2160,12 +2160,12 @@
       shield-size: 10;
       shield-fill: desaturate(#fff,100%);
       shield-placement: line;
-      shield-file: url("symbolsblackwhite/mot_shield[length].png");
+      shield-file: url("osm/styles/bw/symbols/mot_shield[length].png");
       shield-spacing: 750;
       shield-min-distance: 30;
       shield-face-name: @bold-fonts;
-      [length = 7] { shield-file: url('symbolsblackwhite/mot_shield6.png'); }
-      [length = 8] { shield-file: url('symbolsblackwhite/mot_shield7.png'); }
+      [length = 7] { shield-file: url('osm/styles/bw/symbols/mot_shield6.png'); }
+      [length = 8] { shield-file: url('osm/styles/bw/symbols/mot_shield7.png'); }
     }
   }
 
@@ -2174,7 +2174,7 @@
     shield-size: 10;
     shield-fill: desaturate(#fff,100%);
     shield-placement: line;
-    shield-file: url("symbolsblackwhite/tru_shield[length].png");
+    shield-file: url("osm/styles/bw/symbols/tru_shield[length].png");
     shield-spacing: 750;
     shield-min-distance: 30;
     shield-face-name: @bold-fonts;
@@ -2185,7 +2185,7 @@
     shield-size: 10;
     shield-fill: desaturate(#fff,100%);
     shield-placement: line;
-    shield-file: url("symbolsblackwhite/pri_shield[length].png");
+    shield-file: url("osm/styles/bw/symbols/pri_shield[length].png");
     shield-spacing: 750;
     shield-min-distance: 30;
     shield-face-name: @bold-fonts;
@@ -2196,7 +2196,7 @@
     shield-size: 10;
     shield-fill: desaturate(#fff,100%);
     shield-placement: line;
-    shield-file: url("symbolsblackwhite/sec_shield[length].png");
+    shield-file: url("osm/styles/bw/symbols/sec_shield[length].png");
     shield-spacing: 750;
     shield-min-distance: 30;
     shield-face-name: @bold-fonts;
@@ -2210,13 +2210,13 @@
       shield-size: 10;
       shield-fill: desaturate(#fff,100%);
       shield-placement: line;
-      shield-file: url("symbolsblackwhite/mot_shield[length].png");
+      shield-file: url("osm/styles/bw/symbols/mot_shield[length].png");
       shield-spacing: 750;
       shield-min-distance: 30;
       shield-face-name: @bold-fonts;
       shield-avoid-edges: true;
-      [length = 7] { shield-file: url('symbolsblackwhite/mot_shield6.png'); }
-      [length = 8] { shield-file: url('symbolsblackwhite/mot_shield7.png'); }
+      [length = 7] { shield-file: url('osm/styles/bw/symbols/mot_shield6.png'); }
+      [length = 8] { shield-file: url('osm/styles/bw/symbols/mot_shield7.png'); }
     }
   }
 
@@ -2225,7 +2225,7 @@
     shield-size: 10;
     shield-fill: desaturate(#fff,100%);
     shield-placement: line;
-    shield-file: url("symbolsblackwhite/tru_shield[length].png");
+    shield-file: url("osm/styles/bw/symbols/tru_shield[length].png");
     shield-spacing: 750;
     shield-min-distance: 30;
     shield-face-name: @bold-fonts;
@@ -2237,7 +2237,7 @@
     shield-size: 10;
     shield-fill: desaturate(#fff,100%);
     shield-placement: line;
-    shield-file: url("symbolsblackwhite/pri_shield[length].png");
+    shield-file: url("osm/styles/bw/symbols/pri_shield[length].png");
     shield-spacing: 750;
     shield-min-distance: 30;
     shield-face-name: @bold-fonts;
@@ -2249,7 +2249,7 @@
     shield-size: 10;
     shield-fill: desaturate(#fff,100%);
     shield-placement: line;
-    shield-file: url("symbolsblackwhite/sec_shield[length].png");
+    shield-file: url("osm/styles/bw/symbols/sec_shield[length].png");
     shield-spacing: 750;
     shield-min-distance: 30;
     shield-face-name: @bold-fonts;
@@ -2261,7 +2261,7 @@
     shield-size: 10;
     shield-fill: desaturate(#fff,100%);
     shield-placement: line;
-    shield-file: url("symbolsblackwhite/ter_shield[length].png");
+    shield-file: url("osm/styles/bw/symbols/ter_shield[length].png");
     shield-spacing: 750;
     shield-min-distance: 30;
     shield-face-name: @bold-fonts;

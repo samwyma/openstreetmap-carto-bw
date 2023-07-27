@@ -4,9 +4,9 @@
       line-dasharray: 4,2;
       line-width: 1.5;
       line-color: desaturate(#9cf,100%);
-      polygon-pattern-file: url('symbolsblackwhite/glacier.png');
+      polygon-pattern-file: url('osm/styles/bw/symbols/glacier.png');
       [zoom >= 8] {
-        polygon-pattern-file: url('symbolsblackwhite/glacier2.png');
+        polygon-pattern-file: url('osm/styles/bw/symbols/glacier2.png');
       }
     }
   }
@@ -37,7 +37,7 @@
   }
 
   [natural = 'mud'][zoom >= 13]::natural {
-    polygon-pattern-file: url('symbolsblackwhite/mud.png');
+    polygon-pattern-file: url('osm/styles/bw/symbols/mud.png');
   }
 }
 
@@ -45,7 +45,7 @@
   [natural = 'marsh'],
   [natural = 'wetland'] {
     [zoom >= 13] {
-      polygon-pattern-file: url('symbolsblackwhite/marsh.png');
+      polygon-pattern-file: url('osm/styles/bw/symbols/marsh.png');
     }
   }
 }
@@ -203,8 +203,7 @@
     }
   }
 
-  [waterway = 'derelict_canal'],
-  [waterway = 'canal'][disused = 'yes'] {
+  [waterway = 'derelict_canal'] {
     [zoom >= 12] {
       line-width: 1.5;
       line-color: desaturate(#b5e4d0,100%);
@@ -298,8 +297,7 @@
     }
   }
 
-  [waterway = 'derelict_canal'],
-  [waterway = 'canal'][disused = 'yes'] {
+  [waterway = 'derelict_canal'] {
     [zoom >= 13] {
       text-name: "[name]";
       text-size: 9;

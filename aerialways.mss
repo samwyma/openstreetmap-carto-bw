@@ -3,7 +3,7 @@
   [aerialway = 'gondola'],
   [aerialway = 'goods'] {
     [zoom >= 12] {
-      line-pattern-file: url('symbolsblackwhite/cable_car.png');
+      line-pattern-file: url('osm/styles/bw/symbols/cable_car.png');
     }
   }
 
@@ -14,7 +14,7 @@
   [aerialway = 'platter'],
   [aerialway = 'rope_tow'] {
     [zoom >= 12] {
-      line-pattern-file: url('symbolsblackwhite/chair_lift.png');
+      line-pattern-file: url('osm/styles/bw/symbols/chair_lift.png');
     }
   }
 }

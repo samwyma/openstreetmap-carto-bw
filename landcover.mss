@@ -71,7 +71,7 @@
   }
 
   [feature = 'landuse_quarry'][zoom >= 11] {
-    polygon-pattern-file: url('symbolsblackwhite/quarry2.png');
+    polygon-pattern-file: url('osm/styles/bw/symbols/quarry2.png');
     line-width: 0.5;
     line-color: grey;
   }
@@ -81,12 +81,12 @@
       polygon-fill: @vineyard;
     }
     [zoom >= 13] {
-      polygon-pattern-file: url('symbolsblackwhite/vineyard.png');
+      polygon-pattern-file: url('osm/styles/bw/symbols/vineyard.png');
     }
   }
 
   [feature = 'landuse_orchard'][zoom >= 10] {
-    polygon-pattern-file: url('symbolsblackwhite/orchard.png');
+    polygon-pattern-file: url('osm/styles/bw/symbols/orchard.png');
   }
 
   [feature = 'landuse_cemetery'],
@@ -96,9 +96,9 @@
       polygon-fill: @cemetery;
     }
     [zoom >= 14] {
-      [religion = 'jewish'] { polygon-pattern-file: url('symbolsblackwhite/cemetery_jewish.18.png'); }
-      [religion = 'christian'] { polygon-pattern-file: url('symbolsblackwhite/grave_yard.png'); }
-      [religion = 'INT-generic'] { polygon-pattern-file: url('symbolsblackwhite/grave_yard_generic.png'); }
+      [religion = 'jewish'] { polygon-pattern-file: url('osm/styles/bw/symbols/cemetery_jewish.18.png'); }
+      [religion = 'christian'] { polygon-pattern-file: url('osm/styles/bw/symbols/grave_yard.png'); }
+      [religion = 'INT-generic'] { polygon-pattern-file: url('osm/styles/bw/symbols/grave_yard_generic.png'); }
     }
   }
 
@@ -134,7 +134,7 @@
       polygon-opacity: 0.3;
     }
     [zoom >= 11] {
-      polygon-pattern-file: url('symbolsblackwhite/danger.png');
+      polygon-pattern-file: url('osm/styles/bw/symbols/danger.png');
     }
   }
 
@@ -154,7 +154,7 @@
   }
 
   [feature = 'tourism_zoo'][zoom >= 10] {
-    polygon-pattern-file: url('symbolsblackwhite/zoo.png');
+    polygon-pattern-file: url('osm/styles/bw/symbols/zoo.png');
   }
 
   [feature = 'leisure_common'][zoom >= 10] {
@@ -174,7 +174,7 @@
       polygon-fill: @allotments;
     }
     [zoom >= 14] {
-      polygon-pattern-file: url('symbolsblackwhite/allotments.png');
+      polygon-pattern-file: url('osm/styles/bw/symbols/allotments.png');
     }
   }
 
@@ -183,7 +183,7 @@
       polygon-fill: @forest;
     }
     [zoom >= 14] {
-      polygon-pattern-file: url('symbolsblackwhite/forest.png');
+      polygon-pattern-file: url('osm/styles/bw/symbols/forest.png');
     }
   }
 
@@ -282,7 +282,7 @@
       polygon-fill: desaturate(#b5e3b5,100%);
     }
     [zoom >= 14] {
-      polygon-pattern-file: url('symbolsblackwhite/scrub.png');
+      polygon-pattern-file: url('osm/styles/bw/symbols/scrub.png');
     }
   }
 
@@ -320,7 +320,7 @@
   }
 
   [feature = 'natural_beach'][zoom >= 13] {
-    polygon-pattern-file: url('symbolsblackwhite/beach.png');
+    polygon-pattern-file: url('osm/styles/bw/symbols/beach.png');
   }
 
   [feature = 'highway_services'],
@@ -368,18 +368,18 @@
 
 #landuse-overlay {
   [landuse = 'military'][zoom >= 10]::landuse {
-    polygon-pattern-file: url('symbolsblackwhite/military_red_hatch.png');
+    polygon-pattern-file: url('osm/styles/bw/symbols/military_red_hatch.png');
     polygon-pattern-alignment: global;
     line-color: desaturate(#f55, 100%);
     line-width: 3;
     line-opacity: 0.329;
   }
   [leisure = 'nature_reserve'][zoom >= 10] {
-    polygon-pattern-file: url('symbolsblackwhite/nature_reserve5.png');
+    polygon-pattern-file: url('osm/styles/bw/symbols/nature_reserve5.png');
     line-color: desaturate(#6c3, 100%);
     line-width: 0.5;
     [zoom >= 14] {
-      polygon-pattern-file: url('symbolsblackwhite/nature_reserve6.png');
+      polygon-pattern-file: url('osm/styles/bw/symbols/nature_reserve6.png');
       line-width: 1;
     }
   }
@@ -402,13 +402,13 @@
 
 #cliffs {
   [natural = 'cliff'][zoom >= 13] {
-    line-pattern-file: url('symbolsblackwhite/cliff.png');
+    line-pattern-file: url('osm/styles/bw/symbols/cliff.png');
     [zoom >= 15] {
-      line-pattern-file: url('symbolsblackwhite/cliff2.png');
+      line-pattern-file: url('osm/styles/bw/symbols/cliff2.png');
     }
   }
   [man_made = 'embankment'][zoom >= 15]::man_made {
-    line-pattern-file: url('symbolsblackwhite/cliff.png');
+    line-pattern-file: url('osm/styles/bw/symbols/cliff.png');
   }
 }
 

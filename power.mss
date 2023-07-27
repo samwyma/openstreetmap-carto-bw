@@ -17,18 +17,18 @@
 
 #power-towers {
   [zoom >= 14] {
-    point-file: url('symbolsblackwhite/power_tower_3x3.png');
+    point-file: url('osm/styles/bw/symbols/power_tower_3x3.png');
   }
   [zoom >= 15] {
-    point-file: url('symbolsblackwhite/power_tower_5x5.png');
+    point-file: url('osm/styles/bw/symbols/power_tower_5x5.png');
   }
   [zoom >= 17] {
-    point-file: url('symbolsblackwhite/power_tower.png');
+    point-file: url('osm/styles/bw/symbols/power_tower.png');
   }
 }
 
 #power-poles {
   [zoom >= 16] {
-    point-file: url('symbolsblackwhite/power_pole.png');
+    point-file: url('osm/styles/bw/symbols/power_pole.png');
   }
 }

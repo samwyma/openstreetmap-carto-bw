@@ -56,6 +56,6 @@
 
 #locks {
   [waterway = 'lock_gate'][zoom >= 17] {
-    point-file: url('symbolsblackwhite/lock_gate.png');
+    point-file: url('osm/styles/bw/symbols/lock_gate.png');
   }
 }

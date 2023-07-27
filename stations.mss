@@ -1,14 +1,14 @@
 .stations {
   [railway = 'subway_entrance'][zoom >= 18] {
-    point-file: url('symbolsblackwhite/walking.n.12.png');
+    point-file: url('osm/styles/bw/symbols/walking.n.12.png');
     point-placement: interior;
   }
 
   [railway = 'station'][zoom >= 12] {
-    point-file: url('symbolsblackwhite/halt.png');
+    point-file: url('osm/styles/bw/symbols/halt.png');
     point-placement: interior;
     [zoom >= 13] {
-      point-file: url('symbolsblackwhite/station_small.png');
+      point-file: url('osm/styles/bw/symbols/station_small.png');
     }
     [zoom >= 14] {
       text-name: "[name]";
@@ -21,7 +21,7 @@
       text-placement: interior;
     }
     [zoom >= 15] {
-      point-file: url('symbolsblackwhite/station.png');
+      point-file: url('osm/styles/bw/symbols/station.png');
       text-size: 11;
       text-dy: -10;
     }
@@ -31,10 +31,10 @@
   [railway = 'tram_stop'],
   [aerialway = 'station']::aerialway {
     [zoom >= 13] {
-      point-file: url('symbolsblackwhite/halt.png');
+      point-file: url('osm/styles/bw/symbols/halt.png');
     }
     [zoom >= 15] {
-      point-file: url('symbolsblackwhite/station_small.png');
+      point-file: url('osm/styles/bw/symbols/station_small.png');
     }
     [zoom >= 14] {
       text-name: "[name]";
